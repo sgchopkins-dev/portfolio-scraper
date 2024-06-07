@@ -1,0 +1,5 @@
+pandas
+certifi
+pymongo
+rfc5424-logging-handler
+python-dotenv
