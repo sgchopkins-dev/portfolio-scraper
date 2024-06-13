@@ -121,8 +121,8 @@ simon_summary = (
 )
 simon_summary.loc["Totals"] = simon_summary["value"].sum()
 simon_summary["value"] = simon_summary["value"].round(decimals=2)
-simon_summary.loc[:, "value"] = "£" + simon_summary["value"].map("£ {:,.2f}".format)
 simon_summary.loc["Totals", "portfolio"] = ""
+simon_summary['value'] = simon_summary['value'].map("£ {:,.2f}".format)
 
 # Simon detail
 simon_detail = (
@@ -166,8 +166,8 @@ df_summary = (
 )
 df_summary.loc["Totals"] = df_summary["value"].sum()
 df_summary["value"] = df_summary["value"].round(decimals=2)
-df_summary.loc[:, "value"] = "£" + df_summary["value"].map("£ {:,.2f}".format)
 df_summary.loc["Totals", "portfolio"] = ""
+df_summary.loc[:, "value"] = df_summary["value"].map("£ {:,.2f}".format)
 
 # Global detail
 global_detail = (

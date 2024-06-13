@@ -3,17 +3,17 @@ import certifi
 from pymongo import MongoClient
 
 MONGODB_USERNAME = os.getenv('MONGODB_USERNAME')
-MONGODB_USERNAME = os.getenv('MONGODB_PASSWORD')
+MONGODB_PASSWORD = os.getenv('MONGODB_PASSWORD')
 MONGODB_DB = os.getenv('MONGODB_DB')
-MONGODB_USERNAME = os.getenv('MONGODB_SERVER')
+MONGODB_SERVER = os.getenv('MONGODB_SERVER')
 
 DB_URL = (
     "mongodb+srv://"
     + MONGODB_USERNAME
     + ":"
-    + MONGODB_USERNAME
+    + MONGODB_PASSWORD
     + "@"
-    + MONGODB_USERNAME
+    + MONGODB_SERVER
     + "/?retryWrites=true&w=majority"
 )
 
