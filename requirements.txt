@@ -3,3 +3,6 @@ certifi
 pymongo
 rfc5424-logging-handler
 python-dotenv
+requests
+bs4
+pretty_html_table
