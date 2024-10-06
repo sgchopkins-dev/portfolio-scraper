@@ -167,7 +167,8 @@ df_summary = (
 df_summary.loc["Totals"] = df_summary["value"].sum()
 df_summary["value"] = df_summary["value"].round(decimals=2)
 df_summary.loc["Totals", "portfolio"] = ""
-df_summary.loc[:, "value"] = df_summary["value"].map("£ {:,.2f}".format)
+df_summary['value'] = df_summary['value'].map("£ {:,.2f}".format)
+
 
 # Global detail
 global_detail = (
